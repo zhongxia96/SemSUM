@@ -11,15 +11,15 @@ Some codes are borrowed from [fairseq](https://github.com/pytorch/fairseq).
 
 **Preprocess：**
 ```
-python preprocess_graph.py --trainpref ../gigaword_data/train --validpref ../gigaword_data/valid \
---testpref ../gigaword_data/test --source-lang src --target-lang tgt --destdir gigaword-graph \
---joined-dictionary --nwordssrc 50000 --workers 5 --edgedict ../gigaword_data/dict.edge.txt
+python preprocess_graph.py --trainpref ./gigaword_data/train --validpref ./gigaword_data/valid \
+--testpref ./gigaword_data/test --source-lang src --target-lang tgt --destdir gigaword-graph \
+--joined-dictionary --nwordssrc 50000 --workers 5 --edgedict ./gigaword_data/dict.edge.txt
 ```
 ```
 
-python process_graph_copy.py --testpref ../gigaword_data/test --source-lang src --target-lang tgt \
+python process_graph_copy.py --testpref ./gigaword_data/test --source-lang src --target-lang tgt \
 --destdir gigaword-graph-copy  --nwordssrc 50000 --workers 5 \
---edgedict ../gigaword_data/dict.edge.txt --srcdict gigaword-graph/dict.src.txt \
+--edgedict ./gigaword_data/dict.edge.txt --srcdict gigaword-graph/dict.src.txt \
 --tgtdict gigaword-graph/dict.tgt.txt --dataset-impl raw
 ```
 
