@@ -7,7 +7,7 @@ Some codes are borrowed from [fairseq](https://github.com/pytorch/fairseq).
 * PyTorch version >= 1.4.0
 * Python version >= 3.6
 
-**[Download Data]**
+**[Download Data](https://drive.google.com/file/d/1d8ZG-V2MAEN6fAAFnGURyH4Ug5Q0pJQT/view?usp=sharing)**
 
 **Preprocess：**
 ```
