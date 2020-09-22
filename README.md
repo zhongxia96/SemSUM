@@ -25,13 +25,13 @@ python process_graph_copy.py --testpref ./gigaword_data/test --source-lang src -
 
 **Train:**
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py gigaword-graph-small \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py gigaword-graph \
   -a transformer_stack_with_graph_copy_gigaword_big --optimizer adam --lr 0.0001 -s src -t tgt \
   --dropout 0.1 --max-tokens 2000 \
   --share-decoder-input-output-embed \
   --task translation_with_graph_attention_with_copy \
   --adam-betas '(0.9, 0.98)' --save-dir checkpoints/transformer-graph-gigaword --share-all-embeddings\
-  --lr-scheduler reduce_lr_on_plateau --lr-shrink 0.5 --criterion cross_entropy_copy
+  --lr-scheduler reduce_lr_on_plateau --lr-shrink 0.5 --criterion cross_entropy_copy --update-freq 2
 ```
 
 **Test:**
