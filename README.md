@@ -42,3 +42,24 @@ CUDA_VISIBLE_DEVICES=4 python generate.py gigaword-graph-copy \
 --batch-size 128 --beam 5 --lenpen 1.2 --replace-unk --raw-text  
 ```
 
+**Citation:**
+```
+@inproceedings{DBLP:conf/aaai/JinW020,
+  author    = {Hanqi Jin and
+               Tianming Wang and
+               Xiaojun Wan},
+  title     = {SemSUM: Semantic Dependency Guided Neural Abstractive Summarization},
+  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI}
+               2020, The Thirty-Second Innovative Applications of Artificial Intelligence
+               Conference, {IAAI} 2020, The Tenth {AAAI} Symposium on Educational
+               Advances in Artificial Intelligence, {EAAI} 2020, New York, NY, USA,
+               February 7-12, 2020},
+  pages     = {8026--8033},
+  year      = {2020},
+  crossref  = {DBLP:conf/aaai/2020},
+  url       = {https://aaai.org/ojs/index.php/AAAI/article/view/6312},
+  timestamp = {Thu, 04 Jun 2020 13:18:48 +0200},
+  biburl    = {https://dblp.org/rec/conf/aaai/JinW020.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
